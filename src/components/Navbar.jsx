@@ -49,19 +49,19 @@ const Navbar = () => {
           <div className="">
             <ul className="flex gap-8 mr-16 text-lg">
               <Link to="/" onClick={() => setClick(false)}>
-                <li className="hover:text-fuchsia-600 transition hover:border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer">
+                <li className="hover:text-orange-600 transition hover:border-b-2 border-slate-900 hover:border-orange-600 cursor-pointer">
                   Home
                 </li>
               </Link>
 
               <Link to="slider1" onClick={() => setClick(false)}>
-                <li className="hover:text-fuchsia-600 transition hover:border-b-2 hover:border-fuchsia-600 cursor-pointer">
+                <li className="hover:text-orange-600 transition hover:border-b-2 hover:border-orange-600 cursor-pointer">
                   Slider 1
                 </li>
               </Link>
 
               <Link to="slider2" onClick={() => setClick(false)}>
-                <li className="hover:text-fuchsia-600 transition hover:border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer">
+                <li className="hover:text-orange-600 transition hover:border-b-2 border-slate-900 hover:border-orange-600 cursor-pointer">
                   Slider 2
                 </li>
               </Link>

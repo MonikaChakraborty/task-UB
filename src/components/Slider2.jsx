@@ -109,7 +109,7 @@ const Slider2 = () => {
   return (
     <div className="flex justify-center items-center mt-8">
       <div
-        className="flex justify-center gap-12"
+        className="flex justify-center gap-12 transition-transform ease-in-out"
         onMouseDown={handleMouseDown}
         onMouseMove={handleMouseMove}
         onMouseUp={handleMouseUp}
@@ -124,8 +124,8 @@ const Slider2 = () => {
                 <div
                   key={page}
                   onClick={() => setCurrentPage(page)}
-                  className={`w-4 h-4 mt-2 rounded-full cursor-pointer ${
-                    page === currentPage ? "bg-orange-600 w-24" : "bg-gray-300"
+                  className={`w-4 h-4 mt-2 rounded-full cursor-pointer transition ${
+                    page === currentPage ? "bg-orange-600 w-24 h-4" : "bg-gray-300"
                   }`}
                 />
               ))}
