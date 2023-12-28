@@ -29,7 +29,7 @@ const Slider2 = () => {
     },
     {
       id: 4,
-      image: "./slider1/SonyPlayStation5.avif",
+      image: "./slider1/sonyplaystation5.jpg",
       name: "Sony PlayStation 5",
       price: "799",
       discount: "10",
@@ -88,7 +88,7 @@ const Slider2 = () => {
     if (!isSwiping) return;
 
     const deltaX = e.clientX - startX;
-    const threshold = 50; // Adjust this threshold as needed
+    const threshold = 50;
 
     if (deltaX > threshold) {
       setCurrentPage((prevPage) => Math.max(0, prevPage - 1));
@@ -109,25 +109,27 @@ const Slider2 = () => {
   return (
     <div className="flex justify-center items-center mt-8">
       <div
-        className="flex justify-center gap-12 transition-transform ease-in-out"
+        className="flex  lg:flex-row lg:p-0 p-4 flex-col justify-center gap-12 transition-transform ease-in-out"
         onMouseDown={handleMouseDown}
         onMouseMove={handleMouseMove}
         onMouseUp={handleMouseUp}
         style={{ userSelect: "none" }} 
       >
-        <img className="object-cover w-[600px] h-[89vh]" src={sideImg} alt="" />
+        <img className="object-cover w-[600px] h-[96vh]" src={sideImg} alt="" />
         <div className="flex flex-col">
           <div className="flex justify-between">
-            <h2 className="text-2xl font-bold ">Best Sellers</h2>
+            <h2 className="text-2xl text-gray-700 font-bold ">Best Sellers</h2>
             <div className="navigation-dots flex gap-2">
               {[...Array(totalPages).keys()].map((page) => (
                 <div
-                  key={page}
-                  onClick={() => setCurrentPage(page)}
-                  className={`w-4 h-4 mt-2 rounded-full cursor-pointer transition ${
-                    page === currentPage ? "bg-orange-600 w-24 h-4" : "bg-gray-300"
-                  }`}
-                />
+                key={page}
+                onClick={() => setCurrentPage(page)}
+                className={`w-4 h-4 mt-2 rounded-full cursor-pointer transition ${
+                  page === currentPage
+                    ? "bg-orange-600 w-16 h-4"
+                    : "bg-gray-300 w-4 h-4"
+                }`}
+              />
               ))}
             </div>
           </div>

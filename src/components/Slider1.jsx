@@ -36,7 +36,7 @@ const Slider1 = () => {
     },
     {
       id: 4,
-      image: "./slider1/SonyPlayStation5.avif",
+      image: "./slider1/sonyplaystation5.jpg",
       name: "Sony PlayStation 5",
       price: "799",
       discount: "10",
@@ -125,6 +125,7 @@ const Slider1 = () => {
     </div>
   );
 };
+
 
 
 export default Slider1;

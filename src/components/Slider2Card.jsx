@@ -4,16 +4,16 @@ import "@smastrom/react-rating/style.css";
 const Slider2Card = ({ slides }) => {
   return (
     <div className="slider2-card-container mt-3 ">
-      <div className="grid grid-cols-1">
+      <div className="grid grid-cols-1 gap-8">
         {slides.map((slide) => (
           <div key={slide.id} className="slider2-card">
-            <div className="flex border">
+            <div className="flex ">
               <img
-                className="slider2-card-image w-[200px]"
+                className="w-[200px] h-[200px]"
                 src={slide.image}
                 alt={slide.name}
               />
-              <div className="slider2-card-content w-[250px] space-y-3 flex flex-col justify-center items-center">
+              <div className="w-[250px] space-y-3 flex flex-col justify-center items-center">
                 <Rating style={{ maxWidth: 100 }} value={slide.rating} readOnly />
                 <h2>{slide.name}</h2>
              <div className="flex gap-2">

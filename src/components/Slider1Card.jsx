@@ -20,7 +20,7 @@ const Slider1Card = ({ slides }) => {
             <div className="flex">
               <div className="relative group ">
                 <img
-                  className="lg:w-[1000px] w-[600px] h-[200px]  lg:h-[400px] object-cover transition-transform transform scale-100 group-hover:scale-95"
+                  className="lg:w-[1000px] w-[600px] h-[200px] lg:h-[400px] object-cover transition-transform transform scale-100 group-hover:scale-95"
                   src={slide.image}
                   alt={slide.name}
                 />
@@ -78,5 +78,6 @@ const Slider1Card = ({ slides }) => {
     </div>
   );
 };
+
 
 export default Slider1Card;
