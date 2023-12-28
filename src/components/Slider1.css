@@ -1,0 +1,13 @@
+.slider-container {
+    overflow: hidden;
+  }
+  
+  .slider-content {
+    display: flex;
+    transition: transform 0.5s ease; /* Adjust the duration and easing function as needed */
+  }
+  
+  .slider-button {
+    /* Add your button styles here */
+  }
+  

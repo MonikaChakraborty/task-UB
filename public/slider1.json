@@ -1,0 +1,59 @@
+[
+    {
+      "id": 1,
+      "image": "device1.jpg",
+      "name": "Device 1",
+      "price": "$499",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "id": 2,
+      "image": "device2.jpg",
+      "name": "Device 2",
+      "price": "$599",
+      "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "id": 3,
+      "image": "device3.jpg",
+      "name": "Device 3",
+      "price": "$699",
+      "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+      "id": 4,
+      "image": "device4.jpg",
+      "name": "Device 4",
+      "price": "$799",
+      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+      "id": 5,
+      "image": "device5.jpg",
+      "name": "Device 5",
+      "price": "$899",
+      "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "id": 6,
+      "image": "device6.jpg",
+      "name": "Device 6",
+      "price": "$999",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "id": 7,
+      "image": "device7.jpg",
+      "name": "Device 7",
+      "price": "$1099",
+      "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "id": 8,
+      "image": "device8.jpg",
+      "name": "Device 8",
+      "price": "$1199",
+      "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    }
+  ]
+  
