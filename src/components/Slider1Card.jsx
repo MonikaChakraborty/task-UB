@@ -1,6 +1,8 @@
 import { FaHeart } from "react-icons/fa";
 import { TfiReload } from "react-icons/tfi";
 import { IoIosSearch } from "react-icons/io";
+import { Rating } from "@smastrom/react-rating";
+import "@smastrom/react-rating/style.css";
 
 const Slider1Card = ({ slides }) => {
   const calculateDiscountedPrice = (originalPrice, discount) => {
@@ -12,7 +14,7 @@ const Slider1Card = ({ slides }) => {
 
   return (
     <div className="overflow-hidden relative">
-      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4 lg:gap-5 transition ease-out duration-500 overflow-hidden">
+      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4 lg:gap-5 transition ease-out duration-500 overflow-hidden mt-10">
         {slides.map((slide) => (
           <div key={slide.id} className="card relative overflow-hidden ">
             <div className="flex">
@@ -25,7 +27,7 @@ const Slider1Card = ({ slides }) => {
                 <div className="absolute inset-0 bg-slate-600 opacity-0 group-hover:opacity-50 transition-opacity" />
                 {slide.discount ? (
                   <div>
-                    <p className="bg-orange-600 w-12 h-12 rounded-full  flex justify-center items-center top-6 left-2 absolute">
+                    <p className="bg-orange-600 text-white w-12 h-12 rounded-full  flex justify-center items-center top-6 left-2 absolute">
                       -{slide.discount}%
                     </p>
                     <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
@@ -53,23 +55,20 @@ const Slider1Card = ({ slides }) => {
                 )}
               </div>
               <div className="p-5 space-y-3 flex flex-col justify-center w-full">
-                <h2>{slide.name}</h2>
-                <p>{slide.description}</p>
+              <Rating style={{ maxWidth: 100 }} value={slide.rating} readOnly />
+                <h2 className="text-lg text-gray-800">{slide.name}</h2>
+               
                 {slide.discount ? (
                   <div className="flex items-center space-x-2">
                    
-                    <p className="text-orange-600 font-bold">
-                      ${calculateDiscountedPrice(slide.price, slide.discount)}
-                    </p>
-                    <p className="text-gray-500 line-through">
-                      ${parseFloat(slide.price).toFixed(2)}
-                    </p>
+                    <p className="text-red-500 text-xl font-bold">${calculateDiscountedPrice(slide.price, slide.discount)}</p>
+
+                    <p className="text-gray-500 line-through">${slide.price}</p>
                   </div>
                 ) : (
-                  <p className="text-orange-600 font-bold">
-                    ${parseFloat(slide.price).toFixed(2)}
-                  </p>
+                  <p className="text-red-500 text-xl font-bold">${parseFloat(slide.price).toFixed(2)}</p>
                 )}
+                 <p className="text-gray-400">{slide.description}</p>
               </div>
             </div>
           </div>

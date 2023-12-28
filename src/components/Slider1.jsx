@@ -12,6 +12,7 @@ const Slider1 = () => {
       name: "DJI Mavic 3 Drone",
       price: "499",
       discount: "5",
+      rating: 3.5,
       description: "Capture breathtaking aerial footage with the Mavic 3, equipped with a Hasselblad camera for stunning image quality",
     },
     {
@@ -20,6 +21,7 @@ const Slider1 = () => {
       name: "Google Nest Wifi Router",
       price: "599",
       discount: "7",
+      rating: 4.5,
       description:
         "Blanket your home in seamless Wi-Fi coverage with the Nest Wifi router",
     },
@@ -28,7 +30,7 @@ const Slider1 = () => {
       image: "./slider1/samsung-galaxy-s23-ultra.webp",
       name: "Samsung Galaxy S23 Ultra",
       price: "699",
-      
+      rating: 0.0,
       description:
         "This flagship smartphone boasts cutting-edge specs, including a stunning AMOLED display and a versatile camera system",
     },
@@ -38,6 +40,7 @@ const Slider1 = () => {
       name: "Sony PlayStation 5",
       price: "799",
       discount: "10",
+      rating: 4.0,
       description:
         "Experience next-generation gaming with the PS5, featuring immersive haptic feedback and stunning visuals",
     },
@@ -46,6 +49,7 @@ const Slider1 = () => {
       image: "./slider1/Samsung-Galaxy-Watch-5-Pro.jpg",
       name: "Samsung Galaxy Watch5 Pro",
       price: "899",
+      rating: 2.0,
       description:
         "Track your health and fitness like never before with the Galaxy Watch5 Pro",
     },
@@ -55,6 +59,7 @@ const Slider1 = () => {
       name: "Fujifilm Instax Mini 11 Instant Camera",
       price: "999",
       discount: "15",
+      rating: 0.0,
       description: " Capture life's fleeting moments in an instant with this fun and easy-to-use camera",
     },
     {
@@ -63,6 +68,7 @@ const Slider1 = () => {
       name: "Anker Nebula Capsule Smart Mini Projector",
       price: "1099",
       discount: "8",
+      rating: 3.0,
       description:
         "Turn any space into a home theater with this portable projector, easy to stream movies, shows, or even video games",
     },
@@ -71,6 +77,7 @@ const Slider1 = () => {
       image: "./slider1/BoseQuietComfort35IIHeadPhones.webp",
       name: "Bose QuietComfort 35 II",
       price: "1199",
+      rating: 5.0,
       description:
         "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     },
@@ -91,7 +98,7 @@ const Slider1 = () => {
   const startIndex = currentPage * itemsPerPage;
   const visibleSlides = slides.slice(startIndex, startIndex + itemsPerPage);
 
-  const transformValue = `translateX(-{(100 / itemsPerPage) * currentPage * 0.02}%)`;
+  const transformValue = `translateX(-${(100 / itemsPerPage) * currentPage * 0.03}%)`;
 
   console.log('transformValue', transformValue);
 

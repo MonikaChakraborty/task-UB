@@ -1,13 +1,19 @@
+/* Slider1.css */
+
 .slider-container {
-    overflow: hidden;
-  }
-  
-  .slider-content {
-    display: flex;
-    transition: transform 0.5s ease; /* Adjust the duration and easing function as needed */
-  }
-  
-  .slider-button {
-    /* Add your button styles here */
-  }
-  
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-content {
+  display: flex;
+  transition: transform 0.7s ease-out;
+}
+
+.slider-arrow {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 10px;
+}
